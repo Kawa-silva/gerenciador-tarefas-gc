@@ -18,6 +18,10 @@ function adicionarTarefa() {
 	novaTarefa.addEventListener("click", function () {
     novaTarefa.classList.toggle("concluida");
 });
+	
+	novaTarefa.addEventListener("dblclick", function () {
+    listaTarefas.removeChild(novaTarefa);
+});
 
     inputTarefa.value = "";
     inputTarefa.focus();
