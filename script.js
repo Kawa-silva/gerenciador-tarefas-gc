@@ -1,1 +1,21 @@
-console.log("Projeto iniciado");
+const inputTarefa = document.getElementById("inputTarefa");
+const btnAdicionar = document.getElementById("btnAdicionar");
+const listaTarefas = document.getElementById("listaTarefas");
+
+function adicionarTarefa() {
+
+    if (inputTarefa.value.trim() === "") {
+        return;
+    }
+
+    const novaTarefa = document.createElement("li");
+    novaTarefa.textContent = inputTarefa.value;
+
+    listaTarefas.appendChild(novaTarefa);
+
+    inputTarefa.value = "";
+    inputTarefa.focus();
+
+}
+
+btnAdicionar.addEventListener("click", adicionarTarefa);
