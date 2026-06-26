@@ -12,7 +12,9 @@ function adicionarTarefa() {
     novaTarefa.textContent = inputTarefa.value;
 
     listaTarefas.appendChild(novaTarefa);
-
+	
+	novaTarefa.style.cursor = "pointer";
+	
     inputTarefa.value = "";
     inputTarefa.focus();
 
