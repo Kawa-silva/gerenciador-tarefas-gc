@@ -13,4 +13,9 @@ function adicionarTarefa() {
 
     listaTarefas.appendChild(novaTarefa);
 
+    inputTarefa.value = "";
+    inputTarefa.focus();
+
 }
+
+btnAdicionar.addEventListener("click", adicionarTarefa);
