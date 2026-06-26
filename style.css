@@ -63,3 +63,9 @@ h1 {
     border-radius: 5px;
     border: 1px solid #dddddd;
 }
+
+.concluida {
+    text-decoration: line-through;
+    opacity: 0.6;
+    color: #666;
+}

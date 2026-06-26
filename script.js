@@ -12,6 +12,16 @@ function adicionarTarefa() {
     novaTarefa.textContent = inputTarefa.value;
 
     listaTarefas.appendChild(novaTarefa);
+	
+	novaTarefa.style.cursor = "pointer";
+	
+	novaTarefa.addEventListener("click", function () {
+    novaTarefa.classList.toggle("concluida");
+});
+	
+	novaTarefa.addEventListener("dblclick", function () {
+    listaTarefas.removeChild(novaTarefa);
+});
 
     inputTarefa.value = "";
     inputTarefa.focus();
