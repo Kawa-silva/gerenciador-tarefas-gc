@@ -25,3 +25,29 @@ h1 {
     margin-bottom: 20px;
     color: #333;
 }
+
+.formulario {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#inputTarefa {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+#btnAdicionar {
+    padding: 10px 20px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btnAdicionar:hover {
+    background-color: #0b5ed7;
+}
