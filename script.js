@@ -15,6 +15,10 @@ function adicionarTarefa() {
 	
 	novaTarefa.style.cursor = "pointer";
 	
+	novaTarefa.addEventListener("click", function () {
+    novaTarefa.classList.toggle("concluida");
+});
+
     inputTarefa.value = "";
     inputTarefa.focus();
 
